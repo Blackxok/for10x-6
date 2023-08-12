@@ -26,7 +26,7 @@
 .logo {
     width: 100px;
     height: min-content;
-    margin: 0 50px;
+    margin: 0 0 0 200px;
 }
 
 .ul {
@@ -50,9 +50,9 @@ li {
 
 li:hover {
     background-size: 100% 100%;
-    color: #27262c;
+    color: #3e3e3e;
     animation: spring 300ms ease-out;
-    text-shadow: 0 -1px 0 #ef816c;
+    text-shadow: 0 -1px 0 #464646;
     font-weight: bold;
     border: 5px solid #ffffff;
     border-radius: 50px;
@@ -140,9 +140,18 @@ li:active {
     z-index: 9;
 }
 
+.next_section {
+    background: #853fc3;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
 .text p {
     text-transform: uppercase;
     font-size: 20px;
     width: 100%;
     height: 100vh;
+    transition: var(--transition);
+    transform: translate3d(0, calc(var(--scrollTop) / 3.3), 0);
 }

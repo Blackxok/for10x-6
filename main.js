@@ -8,5 +8,3 @@ ScrollSmoother.create({
     content: '.content'
 })
 
-
-console.log('dsdfsfsdfs');
